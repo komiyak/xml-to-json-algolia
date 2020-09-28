@@ -1,0 +1,10 @@
+*.xml
+*.tar.gz
+
+# output file
+*.json
+
+# the bundle folder
+ruby/
+.bundle/
+.byebug_history
