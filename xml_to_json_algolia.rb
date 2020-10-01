@@ -33,8 +33,8 @@ doc.root.nodes.each do |nodes|
   end
 
   # published_id from string to int
-  if item["published_id"]
-    item["published_id"] = item["published_id"].to_i
+  if item["published_at"]
+    item["published_at"] = item["published_at"].to_i
   end
 
   json_object << item
