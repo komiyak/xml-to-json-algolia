@@ -32,10 +32,9 @@ doc.root.nodes.each do |nodes|
     item["place_id"] = item["place_id"].to_i
   end
 
-  # object_id to "objectID"
-  if item["object_id"]
-    item["objectID"] = item["object_id"]
-    item.delete("object_id")
+  # published_id from string to int
+  if item["published_id"]
+    item["published_id"] = item["published_id"].to_i
   end
 
   json_object << item
